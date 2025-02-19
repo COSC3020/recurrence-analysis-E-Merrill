@@ -38,9 +38,9 @@ For $n > 1$:  $T(n) = 3 * T(\frac{n}{3}) + n^5$
 $T(n) = 3 * T(\frac{n}{3}) + n^5$  
 $T(n) = 3 * (3 * T(\frac{n}{9}) + \frac{n^5}{3^5}) + n^5$  
 $T(n) = 9 * T(\frac{n}{9}) + n^5 + \frac{n^5}{3^4}$  
-$T(n) = 27 * T(\frac{n}{27} + n^5 + \frac{n^5}{3^4} + \frac{n^5}{3^8}$  
-$T(n) = 81 * T(\frac{n}{81} + n^5 + \frac{n^5}{3^4} + \frac{n^5}{3^8} + \frac{n^5}{3^12}$  
-$T(n) = 3^i * T(\frac{n}{3^i} + \sum_{i=0}^{\infty} \frac{1}{3^{4i}} * n^5$  
+$T(n) = 27 * T(\frac{n}{27}) + n^5 + \frac{n^5}{3^4} + \frac{n^5}{3^8}$  
+$T(n) = 81 * T(\frac{n}{81}) + n^5 + \frac{n^5}{3^4} + \frac{n^5}{3^8} + \frac{n^5}{3^12}$  
+$T(n) = 3^i * T(\frac{n}{3^i}) + \sum_{i=0}^{\infty} \frac{1}{3^{4i}} * n^5$  
 
 Solving the geometric sum:  
 $\sum_{i=0}^{\infty} \frac{1}{3^{4i}} * n^5 = \frac{n^5}{1 - \frac{1}{3^4}}$  
