@@ -35,7 +35,7 @@ For $n \leq 1$:  $T(n) = 1$
 
 For $n > 1$:  $T(n) = 3 * T(\frac{n}{3}) + n^5$  
 
-$$T(n) = 3 * T(\frac{n}{3}) + n^5  
+T(n) = 3 * T(\frac{n}{3}) + n^5  
 T(n) = 3 * (3 * T(\frac{n}{9}) + \frac{n^5}{3^5}) + n^5  
 T(n) = 9 * T(\frac{n}{9}) + n^5 + \frac{n^5}{3^4}  
 T(n) = 27 * T(\frac{n}{27} + n^5 + \frac{n^5}{3^4} + \frac{n^5}{3^8}  
@@ -51,7 +51,7 @@ T(n) = 3^{log_3(n)} * T(\frac{n}{3^{log_3(n)}}) + \frac{81n^5}{80}
 T(n) = n * T(\frac{n}{n}) + \frac{81n^5}{80}  
 T(n) = n * T(1) + \frac{81n^5}{80}  
 T(n) = n + \frac{81n^5}{80}  
-T(n) = n^5$$
+T(n) = n^5
 
 The mystery function has a final asymptotic complexity of n^5  
 
