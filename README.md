@@ -51,9 +51,9 @@ $T(n) = 3^{log_3(n)} * T(\frac{n}{3^{log_3(n)}}) + \frac{81n^5}{80}$
 $T(n) = n * T(\frac{n}{n}) + \frac{81n^5}{80}$  
 $T(n) = n * T(1) + \frac{81n^5}{80}$  
 $T(n) = n + \frac{81n^5}{80}$  
-$T(n) = n^5$
-
-The mystery function has a final asymptotic complexity of n^5  
+The fastest growing term in the above equation has a complexity of n^5  
+Thus, the final asymptotic complexity of T(n) is:  
+$T(n) \in O(n^5)$    
 
 
 I received a good amount of help from Gage Hepworth figuring out that I could use a geometric series.
